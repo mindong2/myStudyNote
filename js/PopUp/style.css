@@ -6,12 +6,70 @@ body {
 .container {
   width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .sticky {
-  background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modal {
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.modal-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 400px;
+}
+
+.modal-box .fa-times {
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+
+.btn1 {
+  width: 100px;
+  height: 50px;
+  background: rgb(50, 192, 50);
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn2 {
+  width: 100px;
+  height: 50px;
+  background: rgb(190, 52, 52);
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.view {
+  display: block;
 }
 
 .popupBtn {
@@ -27,7 +85,11 @@ body {
   background: #111;
   border-radius: 10px;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease;
+}
+
+.remove {
+  display: none;
 }
 
 .popupBtn:hover {
