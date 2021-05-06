@@ -108,3 +108,11 @@ console.table(cleaned); //console을 table형식으로 봄.
 4: {username: "nico", email: "nave.com"}
 
 {} 브라켓 앞 뒤로 ()를 추가해주면 object로 반환.*/
+
+// + Default value -> arg에 default가 가능
+
+const DEFAULT = `LALALA1`;
+
+const sayHi = (aName = DEFAULT) => `hello ${aName}`;
+
+console.log(sayHi());
