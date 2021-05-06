@@ -14,7 +14,8 @@ const hearts = names.map(function(item){
 
 console.log(hearts);
 
-//map은 각각의 아이템마다 함수를 호출
+/*map은 각각의 아이템마다 함수를 호출후 
+그 element들로 새로운 array를 생성*/
 
 ////
 
