@@ -22,4 +22,4 @@ const list = `
 
     wrapper.innerHTML= list;
 
-    //이렇게하면 리스트간의 ,가 사라진다. 
+    //이렇게하면 리스트간의 ,가 사라진다.
