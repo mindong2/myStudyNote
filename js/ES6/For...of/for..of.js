@@ -1,6 +1,6 @@
 const friends = ["dongmin", "dong","min","mindong"];
 
-// 1. 반복 루프를 쉽게 사용하려면 forEach를 활용. array에서만 사용.
+// 1. 반복 루프를 쉽게 사용하려면 forEach를 활용 하지만 array에서만 사용.
 
 friends.forEach((c,i,a) => console.log(c,i,a));
 // c는 current 각각의 요소 , i는 index, a는 array 순서대로이다.
