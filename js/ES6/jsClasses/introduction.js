@@ -32,7 +32,7 @@ const baseObject = {
 }
 
 const me = baseObject;
-const myObject = baseObject
+const myObject = baseObject;
 
 console.log(me.name); // dongmin2
 console.log(myObject.sayGood()); // i'm Ddongmin
