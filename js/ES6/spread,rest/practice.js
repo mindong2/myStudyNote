@@ -26,7 +26,7 @@ console.log(setCountry(user));
 // {country: "KR", name: "dongmin", age: 26, password: 1234}
 
 
-// renaming , {}는 object를 return하기위함 
+// renaming , ({})는 object를 return하기위함 
 const rename = ({name:dongmin, ...rest}) =>({dongmin,...rest}); 
 
 console.log(rename(user));

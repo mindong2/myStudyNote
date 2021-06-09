@@ -27,3 +27,5 @@ const myFriends = (myfirst, ...potato) =>{
 };
 
 myFriends(`dongmin`,`good`,`and`,1,`sas`,414);
+
+// 그냥 rest만 출력할 경우 array 혹은 object 상태로 출력되기 때문에 인자만 출력하고 싶을때는 spread

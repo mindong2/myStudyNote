@@ -37,6 +37,7 @@ const user = {
     ...(lastName !== "" && {lastName})
     //lastName이 공백이 아니고 넣은값으로.
     //&& 뒤 lastName은 lastName:lastName 의 short
+    // spread로 전개하려면 object여야 하므로 {lastName}
 };
 
 console.log(user);
