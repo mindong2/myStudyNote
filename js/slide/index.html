@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>slider</title>
+  </head>
+  <body>
+    <header class="nav">
+      <a href="#" class="logo">
+          <img src="https://www.mcdonalds.co.kr/kor/images/common/logo.png" class="nav__logo"></img></a>
+      <ul class="nav__menu">
+        <li class="nav__menu-list"><a href="#">Menu</a></li>
+        <li class="nav__menu-list"><a href="#">Store</a></li>
+        <li class="nav__menu-list"><a href="#">News</a></li>
+        <li class="nav__menu-list"><a href="#">Story</a></li>
+      </ul>
+      <div class="nav__util">
+          <a href="#" class="nav__util-btn">ENQUIRY</a>
+          <a href="#" class="nav__util-btn">RECRUIT</a>
+          <a href="#" class="nav__util-btn">ENG</a>
+          <a href="#" class="nav__util-btn"><i class="fas fa-search"></i></a>
+      </div>
+    </header>
+
+    <section class="banner">
+      <div class="imgBox">
+        <img class="slider_img first"
+          src="https://www.mcdonalds.co.kr/upload/main/banner/1622021694694.png"
+          alt="1"
+        />
+        <img class="slider_img"
+          src="https://www.mcdonalds.co.kr/upload/main/banner/1621833457701.png"
+          alt="2"
+        />
+        <img class="slider_img"
+          src="https://www.mcdonalds.co.kr/upload/main/banner/1623663097034.png"
+          alt="3"
+        />
+        <img class="slider_img"
+          src="https://www.mcdonalds.co.kr/upload/main/banner/1621417891978.png"
+          alt="4"
+        />
+        <img class="slider_img"
+          src="https://www.mcdonalds.co.kr/upload/main/banner/1617176534703.png"
+          alt="5"
+        />
+        <img class="slider_img"
+          src="https://www.mcdonalds.co.kr/upload/main/banner/1617838609437.png"
+          alt="6"
+        />
+      </div>
+      <div class="control left" onclick="PrevSlide();">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <div class="control right" onclick="NextSlide();">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

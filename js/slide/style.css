@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: SpeedeeK, Malgun Gothic, "맑은 고딕", Dotum, "돋움", Arial,
+    sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: #fff;
+}
+
+.nav {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  padding: 52px 10%;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  height: 140px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.nav .logo {
+  height: 93px;
+}
+
+.nav .nav__logo {
+  left: 10%;
+  height: 93px;
+}
+
+.nav .nav__menu {
+  padding-left: 100px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nav .nav__menu-list {
+  margin-right: 100px;
+  padding: 0 10px;
+  vertical-align: top;
+  text-align: center;
+}
+
+.nav__menu-list a {
+  color: #292929;
+}
+
+.nav .nav__util {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav .nav__util a {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border-radius: 48px;
+  font-size: 13px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.nav .nav__util a:first-child {
+  background: #db0007;
+}
+
+.nav .nav__util a:nth-child(2) {
+  background: #ffbc0d;
+}
+
+.nav .nav__util a:nth-child(3) {
+  background: #264a36;
+}
+
+.nav .nav__util a:last-child {
+  color: #111;
+  font-size: 2rem;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 540px;
+}
+
+.banner .imgBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 540px;
+}
+
+.banner .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+  background-position: center;
+  opacity: 0;
+  transition: 0.1s ease-in-out;
+}
+
+.banner .imgBox .first {
+  opacity: 1;
+}
+
+.banner .imgBox .active {
+  opacity: 1;
+}
+
+.control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  z-index: 999;
+}
+
+.left {
+  left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.control i {
+  font-size: 1.5rem;
+  color: rgb(212, 209, 209);
+}
