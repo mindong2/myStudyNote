@@ -8,7 +8,8 @@
 .footer .footArea {
   margin: 0 auto;
   display: flex;
-  max-width: 1168px;
+  justify-content: space-between;
+  width: 1168px;
   height: 20%;
 }
 
@@ -34,4 +35,35 @@
   font-weight: 700;
   margin-top: 5px;
   line-height: 1.6;
+}
+
+.footArea__sns {
+  display: flex;
+  align-items: center;
+  height: 56px;
+}
+
+.footArea__sns .sns__icons {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #292929;
+}
+
+.footArea__sns .sns__icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  color: #292929;
+}
+
+.footArea__sns .web_accessibility,
+.footArea__sns img {
+  width: 100px;
+  height: 66px;
 }
