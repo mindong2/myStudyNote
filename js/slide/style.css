@@ -157,6 +157,20 @@ body {
   color: #292929;
 }
 
+.content__list .test {
+  display: none;
+}
+.content__list .test2 {
+  display: none;
+}
+
+.content__list .test3 {
+  display: none;
+}
+.content__list .block {
+  display: block;
+}
+
 .moreBtn {
   display: flex;
   justify-content: center;
@@ -168,6 +182,10 @@ body {
   border-radius: 50%;
   background: #f2c851;
   cursor: pointer;
+}
+
+.BtnFadeOut {
+  display: none;
 }
 
 .moreBtn .fa-plus {
