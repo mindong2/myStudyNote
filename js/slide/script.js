@@ -1,16 +1,20 @@
 const imgBox = document.querySelector('.imgBox'),
       slides = document.querySelectorAll('.slider_img'),
       header = document.querySelector("header"),
-      navMenu = document.querySelector(".nav_wrap"),
+      nav = document.querySelector(".nav"),
+      navMenu = document.querySelector(".nav__menu"),
       navList = document.querySelector(".nav__menu-list"),
       more = document.querySelector(".moreBtn");
 let i = 0;
 
-/*const menuMouseOver = () => {
+/*const menuMouseEnter = () => {
     header.classList.toggle("open")
 }
-navMenu.addEventListener("mouseover",menuMouseOver);*/
 
+header.addEventListener("mouseover",menuMouseEnter);
+
+
+*/
 // 공부후에 다시 수정...
 
 
@@ -18,7 +22,7 @@ const moreBtn = () => {
     const test = document.querySelectorAll(".test"); 
     Array.from(test).forEach(tests => {
         tests.classList.add("block");
-    });    // nodelist이기 때문에 Array.from을 사용해서 Array로 만든 후에 forEach로 적용.
+    });    // test가 nodelist이기 때문에 Array.from을 사용해서 Array로 만든 후에 forEach로 적용.
 
     const moreBtn2 = () => {
         const test2 = document.querySelectorAll(".test2");
