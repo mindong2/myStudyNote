@@ -1,5 +1,3 @@
-// ts환경 예시
-
 import "./styles.css";
 import React, { useState } from "react";
 
@@ -22,3 +20,17 @@ export const useInput = (initialValue: string, validator: validatorType) => {
   };
   return { value, onChange };
 };
+
+// const App = () => {
+//   const maxLength: validatorType = (value) => !value.includes("@");
+
+//   const name = useInput("Mr.", maxLength);
+
+//   return (
+//     <div className="App">
+//       <input type="text" placeholder="name" value={name.value} onChange={name.onChange} />
+//     </div>
+//   );
+// };
+
+// export default App;
